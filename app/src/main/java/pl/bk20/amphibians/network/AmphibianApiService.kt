@@ -1,5 +1,6 @@
 package pl.bk20.amphibians.network
 
+import com.squareup.moshi.Json
 import com.squareup.moshi.Moshi
 import com.squareup.moshi.kotlin.reflect.KotlinJsonAdapterFactory
 import retrofit2.Retrofit
@@ -18,7 +19,12 @@ private val retrofit = Retrofit.Builder()
     .baseUrl(BASE_URL)
     .build()
 
-data class Amphibian(val name: String, val type: String, val description: String)
+data class Amphibian(
+    val name: String,
+    val type: String,
+    val description: String,
+    @Json(name = "image_url") val imageUrl: String?
+)
 
 interface AmphibianApiService {
     @GET("android-basics-kotlin-unit-4-pathway-2-project-api.json")
