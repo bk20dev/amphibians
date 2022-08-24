@@ -16,6 +16,9 @@ class AmphibianViewModel : ViewModel() {
     private val _amphibianList = MutableLiveData<List<Amphibian>>()
     val amphibianList: LiveData<List<Amphibian>> = _amphibianList
 
+    private val _amphibian = MutableLiveData<Amphibian>()
+    val amphibian: LiveData<Amphibian> = _amphibian
+
     private val _status = MutableLiveData(AmphibianApiStatus.LOADING)
     val status: LiveData<AmphibianApiStatus> = _status
 
