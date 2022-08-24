@@ -23,5 +23,12 @@
             app:listData="@{viewModel.amphibianList}"
             app:spanCount="2"
             tools:listitem="@layout/amphibian_list_item" />
+
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            app:amphibianApiStatus="@{viewModel.status}"
+            tools:srcCompat="@drawable/ic_offline" />
     </FrameLayout>
 </layout>
