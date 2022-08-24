@@ -4,7 +4,9 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/AndroidStudioProjects/Amphibians/app/src/main/res/layout/activity_main.xml" value="0.296875" />
-        <entry key="..\:/AndroidStudioProjects/Amphibians/app/src/main/res/layout/fragment_amphibian_list.xml" value="0.296875" />
+        <entry key="..\:/AndroidStudioProjects/Amphibians/app/src/main/res/layout/amphibian_list_item.xml" value="0.3109375" />
+        <entry key="..\:/AndroidStudioProjects/Amphibians/app/src/main/res/layout/fragment_amphibian_details.xml" value="0.55" />
+        <entry key="..\:/AndroidStudioProjects/Amphibians/app/src/main/res/layout/fragment_amphibian_list.xml" value="0.5" />
       </map>
     </option>
   </component>
