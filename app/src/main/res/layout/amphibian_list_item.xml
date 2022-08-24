@@ -11,31 +11,44 @@
 
     <com.google.android.material.card.MaterialCardView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/amphibian_name"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@{amphibian.name}"
-                android:textAppearance="?attr/textAppearanceHeadline6"
-                tools:text="Great Basin Spadefoot" />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="194dp"
+                android:importantForAccessibility="no"
+                android:scaleType="centerCrop"
+                tools:srcCompat="@tools:sample/backgrounds/scenic" />
 
-            <TextView
-                android:id="@+id/amphibian_type"
-                android:layout_width="wrap_content"
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@{amphibian.type}"
-                android:textAppearance="?attr/textAppearanceBody2"
-                android:textColor="?android:attr/textColorSecondary"
-                tools:text="Toad" />
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@{amphibian.name}"
+                    android:textAppearance="?attr/textAppearanceHeadline6"
+                    tools:text="Great Basin Spadefoot" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@{amphibian.type}"
+                    android:textAppearance="?attr/textAppearanceBody2"
+                    android:textColor="?android:attr/textColorSecondary"
+                    tools:text="Toad" />
+            </LinearLayout>
         </LinearLayout>
-
-
     </com.google.android.material.card.MaterialCardView>
+
 </layout>

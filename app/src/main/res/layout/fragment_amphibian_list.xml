@@ -19,6 +19,8 @@
             android:id="@+id/amphibians_list"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:padding="6dp"
             app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
             app:listData="@{viewModel.amphibianList}"
             app:spanCount="2"
