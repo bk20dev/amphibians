@@ -5,9 +5,13 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.activityViewModels
+import pl.bk20.amphibians.data.AmphibianViewModel
 import pl.bk20.amphibians.databinding.FragmentAmphibianDetailsBinding
 
 class AmphibianDetailsFragment : Fragment() {
+    private val viewModel: AmphibianViewModel by activityViewModels()
+
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -15,6 +19,7 @@ class AmphibianDetailsFragment : Fragment() {
     ): View {
         val binding = FragmentAmphibianDetailsBinding.inflate(inflater)
         binding.lifecycleOwner = this
+        binding.viewModel = viewModel
         return binding.root
     }
 }

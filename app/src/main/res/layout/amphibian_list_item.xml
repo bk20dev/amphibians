@@ -7,12 +7,17 @@
         <variable
             name="amphibian"
             type="pl.bk20.amphibians.network.Amphibian" />
+
+        <variable
+            name="clickListener"
+            type="pl.bk20.amphibians.adapter.AmphibianListener" />
     </data>
 
     <com.google.android.material.card.MaterialCardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="8dp">
+        android:layout_margin="8dp"
+        android:onClick="@{() -> clickListener.onClick(amphibian)}">
 
         <LinearLayout
             android:layout_width="match_parent"

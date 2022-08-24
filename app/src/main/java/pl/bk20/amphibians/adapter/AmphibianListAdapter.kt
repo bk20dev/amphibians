@@ -8,7 +8,7 @@ import androidx.recyclerview.widget.RecyclerView
 import pl.bk20.amphibians.databinding.AmphibianListItemBinding
 import pl.bk20.amphibians.network.Amphibian
 
-class AmphibianListAdapter :
+class AmphibianListAdapter(private val amphibianListener: AmphibianListener) :
     ListAdapter<Amphibian, AmphibianListAdapter.AmphibianViewHolder>(DiffCallback) {
 
     companion object DiffCallback : DiffUtil.ItemCallback<Amphibian>() {
@@ -24,8 +24,9 @@ class AmphibianListAdapter :
     class AmphibianViewHolder(private val binding: AmphibianListItemBinding) :
         RecyclerView.ViewHolder(binding.root) {
 
-        fun bind(amphibian: Amphibian) {
+        fun bind(amphibian: Amphibian, clickListener: AmphibianListener) {
             binding.amphibian = amphibian
+            binding.clickListener = clickListener
             binding.executePendingBindings()
         }
     }
@@ -38,6 +39,10 @@ class AmphibianListAdapter :
 
     override fun onBindViewHolder(holder: AmphibianViewHolder, position: Int) {
         val item = getItem(position)
-        holder.bind(item)
+        holder.bind(item, amphibianListener)
     }
+}
+
+fun interface AmphibianListener {
+    fun onClick(amphibian: Amphibian)
 }

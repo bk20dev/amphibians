@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
+import androidx.navigation.fragment.findNavController
 import pl.bk20.amphibians.adapter.AmphibianListAdapter
 import pl.bk20.amphibians.data.AmphibianViewModel
 import pl.bk20.amphibians.databinding.FragmentAmphibianListBinding
@@ -21,7 +22,10 @@ class AmphibianListFragment : Fragment() {
         val binding = FragmentAmphibianListBinding.inflate(inflater)
         binding.lifecycleOwner = this
         binding.viewModel = viewModel
-        binding.amphibiansList.adapter = AmphibianListAdapter()
+        binding.amphibiansList.adapter = AmphibianListAdapter { amphibian ->
+            viewModel.onAmphibianClicked(amphibian)
+            findNavController().navigate(R.id.action_amphibianListFragment_to_amphibianDetailsFragment)
+        }
         return binding.root
     }
 }

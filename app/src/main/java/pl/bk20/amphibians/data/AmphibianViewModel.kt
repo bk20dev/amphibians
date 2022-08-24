@@ -26,6 +26,10 @@ class AmphibianViewModel : ViewModel() {
         loadAmphibians()
     }
 
+    fun onAmphibianClicked(amphibian: Amphibian) {
+        _amphibian.value = amphibian
+    }
+
     private fun loadAmphibians() {
         viewModelScope.launch {
             _status.value = AmphibianApiStatus.LOADING
