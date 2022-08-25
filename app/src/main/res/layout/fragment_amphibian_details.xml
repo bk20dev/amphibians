@@ -10,51 +10,57 @@
             type="pl.bk20.amphibians.data.AmphibianViewModel" />
     </data>
 
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
         tools:context=".AmphibianDetailsFragment">
-
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="312dp"
-            android:importantForAccessibility="no"
-            android:scaleType="centerCrop"
-            app:imageUrl="@{viewModel.amphibian.imageUrl}"
-            tools:srcCompat="@tools:sample/backgrounds/scenic[2]" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:paddingHorizontal="16dp"
-            android:paddingVertical="24dp">
+            android:orientation="vertical">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@{viewModel.amphibian.name}"
-                android:textAppearance="?attr/textAppearanceHeadline4"
-                android:textColor="?attr/colorOnBackground"
-                tools:text="Great Basin Spiderfoot" />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="312dp"
+                android:importantForAccessibility="no"
+                android:scaleType="centerCrop"
+                app:imageUrl="@{viewModel.amphibian.imageUrl}"
+                tools:srcCompat="@tools:sample/backgrounds/scenic[2]" />
 
-            <TextView
-                android:layout_width="wrap_content"
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="4dp"
-                android:text="@{@string/amphibian_type(viewModel.amphibian.type)}"
-                android:textAppearance="?attr/textAppearanceCaption"
-                tools:text="Type: Toad" />
+                android:orientation="vertical"
+                android:paddingHorizontal="16dp"
+                android:paddingVertical="24dp">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:text="@{viewModel.amphibian.description}"
-                android:textAppearance="?attr/textAppearanceBody1"
-                android:textColor="?attr/colorOnBackground"
-                tools:text="This toad spends most of its life underground..." />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@{viewModel.amphibian.name}"
+                    android:textAppearance="?attr/textAppearanceHeadline4"
+                    android:textColor="?attr/colorOnBackground"
+                    tools:text="Great Basin Spiderfoot" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="@{@string/amphibian_type(viewModel.amphibian.type)}"
+                    android:textAppearance="?attr/textAppearanceCaption"
+                    tools:text="Type: Toad" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="@{viewModel.amphibian.description}"
+                    android:textAppearance="?attr/textAppearanceBody1"
+                    android:textColor="?attr/colorOnBackground"
+                    tools:text="This toad spends most of its life underground..." />
+            </LinearLayout>
         </LinearLayout>
-    </LinearLayout>
+    </ScrollView>
+
 </layout>
