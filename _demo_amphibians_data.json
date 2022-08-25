@@ -1,0 +1,40 @@
+{
+  "amphibians": [
+    {
+      "description": "This toad spends most of its life underground due to the arid desert conditions in which it lives. Spadefoot toads earn the name because of their hind legs which are wedged to aid in digging. They are typically grey, green, or brown with dark spots.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/0/09/Spadefoot_pic.jpg",
+      "name": "Great Basin Spadefoot",
+      "type": "Toad"
+    },
+    {
+      "description": "This toad is typically found in South America. Specifically on Mount Roraima at the boarders of Venezuala, Brazil, and Guyana, hence the name. The Roraiam Bush Toad is typically black with yellow spots or marbling along the throat and belly.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/89/Oreophrynella_quelchii.jpg",
+      "name": "Roraima Bush Toad",
+      "type": "Toad"
+    },
+    {
+      "description": "Also known as the Pacific Treefrog, it is the most common frog on the Pacific Coast of North America. These frogs can vary in color between green and brown and can be identified by a brown stripe that runs from their nostril, through the eye, to the ear.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/5/59/Pacific_Tree_Frog_%28Pseudacris_regilla%29_3.JPG",
+      "name": "Pacific Chorus Frog",
+      "type": "Frog"
+    },
+    {
+      "description": "Sometimes called the Strawberry Poison-Dart Frog, this little amphibian is identifiable by its bright red body and blueish-purple arms and legs. The Blue Jeans Frog is not toxic to humans like some of its close relatives, but it can be harmful to some predators.",
+      "image_url": "https://www.anywhere.com/img-a/eco/49/blue-jeans-frog.jpg?q=75&type=jpeg&w=480",
+      "name": "Blue Jeans Frog",
+      "type": "Frog"
+    },
+    {
+      "description": "As the name implies, this salamander can be found in Northern California, as well as other parts of the Pacific Northwest. They prefer temperate areas with plenty of moisture and they typically can grow up to 30 cm.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/d/d2/Dicamptodon_ensatus01.jpg",
+      "name": "California Giant Salamander",
+      "type": "Salamander"
+    },
+    {
+      "description": "Tiger Salamanders are typically found on the Atlantic Coast of North America. They are named for their coloring which is typically a brown body broken up by yellowish-greensish spots. While they like moist conditions, they don't spend very much time in bodies of water. Instead they prefer to burrow into loose soil.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/c/c8/Salamandra_Tigre.png",
+      "name": "Tiger Salamander",
+      "type": "Salamander"
+    }
+  ]
+}
